@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+body {background:url(../img/1.jpg) no-repeat center center; background-size:cover}
+
+
+.login_wrap {position:fixed; left:50%; top:50%; z-index:10; transform:translate(-50%, -50%);}
+.login_wrap > p {color:#fff; font-size:34px; text-align: center;}
+.login_form .login_input {font-size:50px; color:#fff; height:auto; border-bottom:1px solid #fff; outline:none; background-color:transparent;}
+.login_form .login_input::placeholder {color:#fff;}
+.login_form .login_submit {opacity:0;}

@@ -12,12 +12,12 @@ function onGeoOk(position){
 		const city = document.querySelector('#weather span:last-child');
 
 		city.innerText = data.name;
-		weather.innerText = `${data.weather[0].description} / ${data.main.temp} ℃`
+		weather.innerText = `${data.weather[0].description} / ${data.main.temp}℃`
 	})
 }
 
 function onGeoError(onGeoError){
-	alert('못찾았음~ 날씨 못알려줌~');
+	alert('내 위치 확인 권한 허용을 눌러주세요.');
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
